@@ -1,5 +1,5 @@
 {% set name = "superflore" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ros-infrastructure/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e10bde2a62aec7e2ba8c5040e2d0593a06a99cdc018ccbb58c46f7659705bc02
+  sha256: ab15321ec477b036b3d672685ce5027f970ae1df885c70f1c5fd5adfb9b8ca01
 
 build:
   number: 0
