@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python
     - setuptools
   run:
     - git
@@ -31,7 +31,7 @@ requirements:
     - docker-py
     - gitpython
     - pygithub
-    - python >=3
+    - python
     - pyyaml
     - requests
     - rosdep >=0.15.2
