@@ -10,6 +10,9 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
+      osx_python3.6.____73_pypy:
+        CONFIG: osx_python3.6.____73_pypy
+        UPLOAD_PACKAGES: True
       osx_python3.6.____cpython:
         CONFIG: osx_python3.6.____cpython
         UPLOAD_PACKAGES: True
@@ -30,3 +33,5 @@ jobs:
     displayName: Run OSX build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+      FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
