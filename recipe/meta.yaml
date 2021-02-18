@@ -10,7 +10,7 @@ source:
   sha256: 3d6598761e428736a0f6f43912d98a254cb3758e634e7f53e2f58a5dc3f0094d
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py2k]
   entry_points:
     - superflore-gen-ebuilds = superflore.generators.ebuild:main
