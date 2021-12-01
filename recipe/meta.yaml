@@ -1,5 +1,5 @@
 {% set name = "superflore" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ros-infrastructure/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3d6598761e428736a0f6f43912d98a254cb3758e634e7f53e2f58a5dc3f0094d
+  sha256: f390dfa72d7da87b1362e9b0ac583203c9ad93b00cf0c2e1e880b4c4a62af585
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py2k]
   entry_points:
     - superflore-gen-ebuilds = superflore.generators.ebuild:main
